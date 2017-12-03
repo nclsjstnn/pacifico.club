@@ -1,0 +1,75 @@
+h2 {
+  font-size: 150pt;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+  margin: 0;
+  letter-spacing: -10pt;
+  line-height: 120pt;
+  text-transform: uppercase;
+}
+
+span {
+	font-size: 70px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+	font-variant: normal;
+	font-weight: 700; 
+}
+
+#artwork {
+  background: url('http://cache.swdlive.com/image/cure/resize_1360001516.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+#container {
+  overflow: hidden;
+  margin: 30px 0 0 70px;
+}
+
+#footer {
+ position: absolute;
+ bottom: 30px;
+ left: 70px;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-style: normal;
+ font-variant: normal;
+ font-weight: 700;
+ font-size: 16pt;
+}
+
+/* Give the player a height & width of 0. Otherwise the player is visible on mobile devices (tested on iPhone 5). */
+
+#player {
+  height: 0;
+  width: 0
+}
+
+.speaker {
+  color: white;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAwCAYAAABqkJjhAAACIElEQVRoQ93aT0tUURjH8e/vLfkmbNl7SE0xULBI0jGwQlHIiiIX6UprZa0iUayNEP1xoYjQwj/UoqAEJS0ydeSJcyAGGefOvXfuOZ7lMMN8uJzzPM95niuAcrl8AWgCRiQd2mehLjnwReAFsAxckrQUC9icR8AYMCDpd2jwyif8v28daJX0JiR0NbB3PgGuSdoJAV4L2JxfgSuSnheNrhXsnQbulPStKHhSsDlta1yVNFEEuh6wd74G2iTZ4WzYSgM25C8Lf8A9SRYOc19pwR740SWclbzFWYHN+RcYBQYl/ckLniXYGz8BLZIW80DnAf5XngDjwHVJP7OE5wX2xi9Ah6SXWaHzBnvnM6BL0ve08EaBzbkNdEuaSoNuJNg7Z4HLkj7XAy8CbM49oA94KOk4CbwosDe+dSFwrVZ00WBzHgB3gCFJlnyqrhDAHrjqnva7auKQwOa0/fwA6Je0fxo8NLA3brlIMleJDhW86cDzoYNtS9wHSjFsCTt01sR5H/qhs7B2GxiOIaxFkzgsNd8AHsWQml8B7TEUPz9ceTl9VvoN4dA9ddjgC/horkh2CX0M9MZwCY3mmm+17AhwK4ZGygdXywbfqrJmYMkKlhiagQuu3bqRJq4m/W099bA1tHskTSb9syy+nxQ842YdwY8MbChjsw0bPha6znrClgD82Gu3UKn783MxWLRZxV3gZgyj22iG483u9YPR0F8/OAHDbi1AE4zRkgAAAABJRU5ErkJggg==);
+  width: 44px;
+  height: 48px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.speakerplay {
+  color: white;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAwCAYAAACMuVOlAAAAhklEQVRYR+3YMQqAQAxE0eSMNl5R8I6xdhGSrWye/YIMf/YPm1VVsf9dmXnuHquqOyKO3XPpJ5fIJPnBECbXUBRnTURxFGegH8VRnAEmjMM4HSaMwzgdIxHBOIwzwIRxGKfDhHEYp2OEcT4SUhzFURwP+28GLHPLfHArWOaWeYeJgfH3wHgA6AqvgJQpzmMAAAAASUVORK5CYII=);
+  width: 41px;
+  height: 48px;
+  background-repeat: no-repeat;
+}
+
