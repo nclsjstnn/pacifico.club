@@ -35,7 +35,7 @@ span {
 }
 
 #artwork {
-  background: url('http://cache.swdlive.com/image/cure/resize_1360001516.jpg');
+  background-image: url('http://cache.swdlive.com/image/cure/resize_1360001516.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -44,7 +44,7 @@ span {
   height: 150px;
   position: relative;
   text-align: center;
-  line-height: 139pt;
+  line-height: 141pt;
 }
 
 /* Give the player a height & width of 0. Otherwise the player is visible on mobile devices (tested on iPhone 5). */

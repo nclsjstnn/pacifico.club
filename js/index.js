@@ -14,7 +14,7 @@ function loadChirp(){
                     } else {
                         artwork = "https://www.deliciousseeds.com/media/catalog/product/cache/6/image/600x600/9df78eab33525d08d6e5fb8d27136e95/m/e/mexican-sativa-photo_3.jpg";
                     }
-                    $('#artwork').css("background", `url('${artwork}')`);  
+                    $('#artwork').css("background-image", `url('${artwork}')`);  
                                       
             });           
         }); 
