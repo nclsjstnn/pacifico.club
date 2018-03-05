@@ -1,5 +1,6 @@
 function loadChirp(){
-    $.getJSON("http://cors-proxy.htmldriven.com/?url=http://radiosativa.servemp3.com:8000/status-json.xsl", 
+    var uuid = "022b126876d7082bdf5f4b1569f2a54c";
+    $.getJSON("http://cors-proxy.htmldriven.com/?url=http://" + uuid + ".resindevice.io:8000/status-json.xsl", 
         function(data) {
             var radioInfo = JSON.parse(data.body)
             var songTitle = radioInfo.icestats.source.title;
