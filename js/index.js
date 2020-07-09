@@ -1,5 +1,5 @@
 function loadChirp() {
-  $.getJSON("https://yacdn.org/serve/https://e4cef76face8dc93e2dccd784e431322.balena-devices.com/status-json.xsl",
+  $.getJSON("https://yacdn.org/serve/https://e4cef76face8dc93e2dccd784e431322.balena-devices.com/status-json.xsl?maxAge=2",
     function (data) {
       if (!data.icestats) return null;
       var songTitle = data.icestats.source.title;
