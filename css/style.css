@@ -6,7 +6,7 @@ h2 {
 	font-weight: 700;
   margin: 0;
   letter-spacing: -1pt;
-  line-height: 120pt;
+  line-height: 70pt;
   text-transform: uppercase;
   color: white;
 }
@@ -35,6 +35,10 @@ span {
  font-weight: 700;
  font-size: 16pt;
  color: white;
+}
+
+#footer a {
+  color: white;
 }
 
 #artwork {
