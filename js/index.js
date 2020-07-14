@@ -1,7 +1,7 @@
 function loadChirp() {
-  $.getJSON("https://yacdn.org/proxy/https://e4cef76face8dc93e2dccd784e431322.balena-devices.com/status-json.xsl",
+  $.getJSON("https://yacdn.org/proxy/https://8151fa637af0a1247e7e55337f53e140.balena-devices.com/status-json.xsl",
     function (data) {
-      if (!data.icestats) return null;
+      if (!data.icestats) return $('.song-band').html("Lo sentimos pero detectamos un problema, recomendamos revisar nuestras redes, para saber cuando volvemos");
       var songTitle = data.icestats.source.title;
       $('.song-title').html(songTitle.split(' - ')[1]);
       $('.song-band').html(songTitle.split(' - ')[0]);
