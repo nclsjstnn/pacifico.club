@@ -16,6 +16,9 @@ function loadChirp() {
           $('#artwork').css("background-image", `url('${artwork}')`);
 
         });
+    })
+    .fail(function() {
+      $('.song-band').html("Lo sentimos, perdimos conección con la estación. Mientras tanto escucha nuestro <a target='_blank' href='https://open.spotify.com/playlist/0Eq6K7tirWTUfPEX1UHqmk?si=RCviQVjDQsSjpUt_mlD8oQ'>playlist en Spotify</a>");
     });
   setTimeout("loadChirp()", 5000);
 }
