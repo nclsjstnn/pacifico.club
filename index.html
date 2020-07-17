@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111182698-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-111182698-1');
-  </script>
-  <!-- Primary Meta Tags -->
-  <title>PACIFICO.CLUB</title>
-  <meta name="title" content="RADIO PACIFICO.CLUB">
-  <meta name="description" content="Transmitiendo música de vanguardia sin ads 24/7 desde el Pacifico.">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-196P0P7SQG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pacifico.club/">
-  <meta property="og:title" content="RADIO PACIFICO.CLUB">
-  <meta property="og:description" content="Transmitiendo música de vanguardia sin ads 24/7 desde el Pacifico.">
-  <meta property="og:image" content="https://i.imgur.com/IVvb0TN.png">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://pacifico.club/">
-  <meta property="twitter:title" content="RADIO PACIFICO.CLUB">
-  <meta property="twitter:description" content="Transmitiendo música de vanguardia sin ads 24/7 desde el Pacifico.">
-  <meta property="twitter:image" content="https://i.imgur.com/IVvb0TN.png">
+        gtag('js', new Date());
+        gtag('config', 'G-196P0P7SQG');
+    </script>
+    <!-- Primary Meta Tags -->
+    <title>PACIFICO.CLUB</title>
+    <meta name="title" content="RADIO PACIFICO.CLUB">
+    <meta name="description" content="Transmitiendo música de vanguardia sin ads 24/7 desde el Pacifico.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pacifico.club/">
+    <meta property="og:title" content="RADIO PACIFICO.CLUB">
+    <meta property="og:description" content="Transmitiendo música de vanguardia sin ads 24/7 desde el Pacifico.">
+    <meta property="og:image" content="https://i.imgur.com/IVvb0TN.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pacifico.club/">
+    <meta property="twitter:title" content="RADIO PACIFICO.CLUB">
+    <meta property="twitter:description" content="Transmitiendo música de vanguardia sin ads 24/7 desde el Pacifico.">
+    <meta property="twitter:image" content="https://i.imgur.com/IVvb0TN.png">
 </head>
+
 <body>
-  <!-- <div class="video-background">
+    <!-- <div class="video-background">
     <div class="video-foreground">
       <iframe
         src="https://www.youtube.com/embed/mnM0YoZvYA4?controls=0&showinfo=0&rel=0&mute=1&autoplay=1&loop=1&playlist=mnM0YoZvYA4"
         frameborder="0" volume="0" allowfullscreen></iframe>
     </div>
   </div> -->
-  <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="myVideo">
     <source src="img/cut.mp4" type="video/mp4">
   </video>
-  <div id="container">
-    <div id="artwork">
-      <div class="speaker"></div>
-      <audio id="player">
+    <div id="container">
+        <div id="artwork">
+            <div class="speaker"></div>
+            <audio id="player">
         <source src="https://8151fa637af0a1247e7e55337f53e140.balena-devices.com/mpd" type="audio/mp3" />
       </audio>
+        </div>
+        <h2 class="song-title"></h2>
+        <span class="song-band">Cargando...</span>
     </div>
-    <h2 class="song-title"></h2>
-    <span class="song-band">Cargando...</span>
-  </div>
-  <div id="footer">
-    Vanguardia musical sin ads las 24/7. Transmitiendo desde un Raspberry Pi 3 en el Pacifico.<br>
-    Siguenos en <a href="https://www.facebook.com/pacifico.club.radio/" target="_blank">https://facebook.com/pacifico.club.radio</a>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/radio.js"></script>
+    <div id="footer">
+        Vanguardia musical sin ads las 24/7. Transmitiendo desde un Raspberry Pi 3 en el Pacifico.<br> Siguenos en <a href="https://www.facebook.com/pacifico.club.radio/" target="_blank">https://facebook.com/pacifico.club.radio</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/radio.js"></script>
 </body>
+
 </html>
