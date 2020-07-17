@@ -1,26 +1,29 @@
-function loadChirp() {
+function getArtwork(data) {
+  if (data && data.results[0]) {
+    return data.results[0].thumb;
+  } else {
+    return "https://i.imgur.com/lXVbeR2.png";
+  }
+};
+
+function loadSongData() {
   $.getJSON("https://yacdn.org/proxy/https://8151fa637af0a1247e7e55337f53e140.balena-devices.com/status-json.xsl",
-    function (data) {
-      if (!data.icestats) return $('.song-band').html("Lo sentimos pero detectamos un problema, recomendamos revisar nuestras redes, para saber cuando volvemos");
+    function(data) {
+      if (!data.icestats) return $('.song-band').html("No hay datos de artista");
       var songTitle = data.icestats.source.title;
       $('.song-title').html(songTitle.split(' - ')[1]);
       $('.song-band').html(songTitle.split(' - ')[0]);
       $.getJSON(`https://api.discogs.com/database/search?q=${encodeURIComponent(songTitle)}&{?type,title,release_title,credit,artist}&key=ficfXrWkDgtojPpvYiwS&secret=jvVGkUCRaHlPQAiaSZorLmdSyHpMoFIR`,
-        function (data) {
-          var artwork;
-          if (data.results[0]) {
-            artwork = data.results[0].thumb;
-          } else {
-            artwork = "https://i.imgur.com/lXVbeR2.png";
-          }
-          $('#artwork').css("background-image", `url('${artwork}')`);
-
+        function(data) {
+          $('#artwork').css("background-image", `url('${getArtwork(data)}')`);
         });
-    })
-    .fail(function() {
-      $('.song-band').html("Lo sentimos, perdimos conección con la estación. Mientras tanto escucha nuestro <a target='_blank' href='https://open.spotify.com/playlist/0Eq6K7tirWTUfPEX1UHqmk?si=RCviQVjDQsSjpUt_mlD8oQ'>playlist en Spotify</a>");
-    });
-  setTimeout("loadChirp()", 5000);
+      })
+      .fail(function() {
+        $('#artwork').css("background-image", `url('${getArtwork()}')`);
+        $('.song-title').html("Lo sentimos");
+        $('.song-band').html("Perdimos conexión con la estación. Mientras tanto escucha nuestro <a target='_blank' href='https://open.spotify.com/playlist/0Eq6K7tirWTUfPEX1UHqmk?si=RCviQVjDQsSjpUt_mlD8oQ'>playlist en Spotify</a>");
+      });
+    setTimeout("loadSongData()", 5000);
 }
 
-loadChirp();
+loadSongData();
