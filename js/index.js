@@ -7,7 +7,7 @@ function getArtwork(data) {
 };
 
 function loadSongData() {
-  $.getJSON("https://yacdn.org/proxy/https://8151fa637af0a1247e7e55337f53e140.balena-devices.com/status-json.xsl",
+  $.getJSON("https://yacdn.org/proxy/https://7c99f882722a1845eb104b83eeccbaf8.balena-devices.com/status-json.xsl",
     function(data) {
       if (!data.icestats) return $('.song-band').html("No hay datos de artista");
       var songTitle = data.icestats.source.title;
